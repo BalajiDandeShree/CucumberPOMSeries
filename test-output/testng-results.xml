@@ -1,104 +1,142 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="5" passed="5" failed="0" skipped="0">
+<testng-results ignored="0" total="2" passed="0" failed="2" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-05-11T15:12:09 IST" name="Default suite" finished-at="2024-05-11T15:12:22 IST" duration-ms="13083">
+  <suite started-at="2024-05-12T10:41:07 IST" name="Default suite" finished-at="2024-05-12T10:41:09 IST" duration-ms="2048">
     <groups>
       <group name="cucumber">
-        <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:parallel.MyTestRunners@5032714f]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
+        <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:testrunners.TestExcelDataRunner@5032714f]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
       </group> <!-- cucumber -->
     </groups>
-    <test started-at="2024-05-11T15:12:09 IST" name="Default test" finished-at="2024-05-11T15:12:22 IST" duration-ms="13083">
-      <class name="parallel.MyTestRunners">
-        <test-method is-config="true" signature="setUpClass()[pri:0, instance:parallel.MyTestRunners@5032714f]" started-at="2024-05-11T15:12:09 IST" name="setUpClass" finished-at="2024-05-11T15:12:09 IST" duration-ms="408" status="PASS">
+    <test started-at="2024-05-12T10:41:07 IST" name="Default test" finished-at="2024-05-12T10:41:09 IST" duration-ms="2048">
+      <class name="testrunners.TestExcelDataRunner">
+        <test-method is-config="true" signature="setUpClass()[pri:0, instance:testrunners.TestExcelDataRunner@5032714f]" started-at="2024-05-12T10:41:07 IST" name="setUpClass" finished-at="2024-05-12T10:41:08 IST" duration-ms="365" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUpClass -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:parallel.MyTestRunners@5032714f]" started-at="2024-05-11T15:12:09 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-05-11T15:12:20 IST" duration-ms="10468" status="PASS">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:testrunners.TestExcelDataRunner@5032714f]" started-at="2024-05-12T10:41:08 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-05-12T10:41:08 IST" duration-ms="201" status="FAIL">
           <params>
             <param index="0">
               <value>
-                <![CDATA["Dashboard section count"]]>
+                <![CDATA[""]]>
               </value>
             </param>
             <param index="1">
               <value>
-                <![CDATA["Optional[Dash Board Freature]"]]>
+                <![CDATA["Optional[Test Excel data]"]]>
               </value>
             </param>
           </params>
+          <exception class="java.lang.IllegalArgumentException">
+            <message>
+              <![CDATA[Test name must not be null or empty]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.IllegalArgumentException: Test name must not be null or empty
+at com.aventstack.extentreports.util.Assert.notEmpty(Assert.java:12)
+at com.aventstack.extentreports.ExtentTest.<init>(ExtentTest.java:96)
+at com.aventstack.extentreports.ExtentTest.createNode(ExtentTest.java:153)
+at com.aventstack.extentreports.cucumber.adapter.ExtentCucumberAdapter.createScenarioOutline(ExtentCucumberAdapter.java:369)
+at com.aventstack.extentreports.cucumber.adapter.ExtentCucumberAdapter.handleScenarioOutline(ExtentCucumberAdapter.java:348)
+at com.aventstack.extentreports.cucumber.adapter.ExtentCucumberAdapter.handleTestCaseStarted(ExtentCucumberAdapter.java:162)
+at com.aventstack.extentreports.cucumber.adapter.ExtentCucumberAdapter$3.receive(ExtentCucumberAdapter.java:107)
+at com.aventstack.extentreports.cucumber.adapter.ExtentCucumberAdapter$3.receive(ExtentCucumberAdapter.java:104)
+at io.cucumber.core.eventbus.AbstractEventPublisher.send(AbstractEventPublisher.java:51)
+at io.cucumber.core.eventbus.AbstractEventBus.send(AbstractEventBus.java:12)
+at io.cucumber.core.runtime.SynchronizedEventBus.send(SynchronizedEventBus.java:47)
+at io.cucumber.core.runtime.ThreadLocalRunnerSupplier$LocalEventBus.send(ThreadLocalRunnerSupplier.java:66)
+at io.cucumber.core.runner.TestCase.emitTestCaseStarted(TestCase.java:228)
+at io.cucumber.core.runner.TestCase.run(TestCase.java:92)
+at io.cucumber.core.runner.Runner.runPickle(Runner.java:71)
+at io.cucumber.testng.TestNGCucumberRunner.lambda$runScenario$0(TestNGCucumberRunner.java:116)
+at io.cucumber.core.runtime.CucumberExecutionContext.runTestCase(CucumberExecutionContext.java:117)
+at io.cucumber.testng.TestNGCucumberRunner.runScenario(TestNGCucumberRunner.java:113)
+at io.cucumber.testng.AbstractTestNGCucumberTests.runScenario(AbstractTestNGCucumberTests.java:31)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
+at org.testng.internal.invokers.TestMethodWithDataProviderMethodWorker.call(TestMethodWithDataProviderMethodWorker.java:80)
+at org.testng.internal.invokers.TestMethodWithDataProviderMethodWorker.call(TestMethodWithDataProviderMethodWorker.java:17)
+at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
+at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+at java.base/java.lang.Thread.run(Thread.java:833)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.IllegalArgumentException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:parallel.MyTestRunners@5032714f]" started-at="2024-05-11T15:12:09 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-05-11T15:12:20 IST" duration-ms="10856" status="PASS">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:testrunners.TestExcelDataRunner@5032714f]" started-at="2024-05-12T10:41:08 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-05-12T10:41:08 IST" duration-ms="201" status="FAIL">
           <params>
             <param index="0">
               <value>
-                <![CDATA["Accounts page title"]]>
+                <![CDATA[""]]>
               </value>
             </param>
             <param index="1">
               <value>
-                <![CDATA["Optional[Dash Board Freature]"]]>
+                <![CDATA["Optional[Test Excel data]"]]>
               </value>
             </param>
           </params>
+          <exception class="java.lang.IllegalArgumentException">
+            <message>
+              <![CDATA[Test name must not be null or empty]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.IllegalArgumentException: Test name must not be null or empty
+at com.aventstack.extentreports.util.Assert.notEmpty(Assert.java:12)
+at com.aventstack.extentreports.ExtentTest.<init>(ExtentTest.java:96)
+at com.aventstack.extentreports.ExtentTest.createNode(ExtentTest.java:153)
+at com.aventstack.extentreports.cucumber.adapter.ExtentCucumberAdapter.createScenarioOutline(ExtentCucumberAdapter.java:369)
+at com.aventstack.extentreports.cucumber.adapter.ExtentCucumberAdapter.handleScenarioOutline(ExtentCucumberAdapter.java:348)
+at com.aventstack.extentreports.cucumber.adapter.ExtentCucumberAdapter.handleTestCaseStarted(ExtentCucumberAdapter.java:162)
+at com.aventstack.extentreports.cucumber.adapter.ExtentCucumberAdapter$3.receive(ExtentCucumberAdapter.java:107)
+at com.aventstack.extentreports.cucumber.adapter.ExtentCucumberAdapter$3.receive(ExtentCucumberAdapter.java:104)
+at io.cucumber.core.eventbus.AbstractEventPublisher.send(AbstractEventPublisher.java:51)
+at io.cucumber.core.eventbus.AbstractEventBus.send(AbstractEventBus.java:12)
+at io.cucumber.core.runtime.SynchronizedEventBus.send(SynchronizedEventBus.java:47)
+at io.cucumber.core.runtime.ThreadLocalRunnerSupplier$LocalEventBus.send(ThreadLocalRunnerSupplier.java:66)
+at io.cucumber.core.runner.TestCase.emitTestCaseStarted(TestCase.java:228)
+at io.cucumber.core.runner.TestCase.run(TestCase.java:92)
+at io.cucumber.core.runner.Runner.runPickle(Runner.java:71)
+at io.cucumber.testng.TestNGCucumberRunner.lambda$runScenario$0(TestNGCucumberRunner.java:116)
+at io.cucumber.core.runtime.CucumberExecutionContext.runTestCase(CucumberExecutionContext.java:117)
+at io.cucumber.testng.TestNGCucumberRunner.runScenario(TestNGCucumberRunner.java:113)
+at io.cucumber.testng.AbstractTestNGCucumberTests.runScenario(AbstractTestNGCucumberTests.java:31)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
+at org.testng.internal.invokers.TestMethodWithDataProviderMethodWorker.call(TestMethodWithDataProviderMethodWorker.java:80)
+at org.testng.internal.invokers.TestMethodWithDataProviderMethodWorker.call(TestMethodWithDataProviderMethodWorker.java:17)
+at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
+at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+at java.base/java.lang.Thread.run(Thread.java:833)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.IllegalArgumentException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:parallel.MyTestRunners@5032714f]" started-at="2024-05-11T15:12:09 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-05-11T15:12:20 IST" duration-ms="10515" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA["Login with correct credentials"]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA["Optional[Login page feature]"]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:parallel.MyTestRunners@5032714f]" started-at="2024-05-11T15:12:09 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-05-11T15:12:19 IST" duration-ms="9544" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA["Login page title"]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA["Optional[Login page feature]"]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:parallel.MyTestRunners@5032714f]" started-at="2024-05-11T15:12:09 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-05-11T15:12:18 IST" duration-ms="9087" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA["Forget password link"]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA["Optional[Login page feature]"]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- runScenario -->
-        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:parallel.MyTestRunners@5032714f]" started-at="2024-05-11T15:12:20 IST" name="tearDownClass" finished-at="2024-05-11T15:12:22 IST" duration-ms="1774" status="PASS">
+        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:testrunners.TestExcelDataRunner@5032714f]" started-at="2024-05-12T10:41:08 IST" name="tearDownClass" finished-at="2024-05-12T10:41:09 IST" duration-ms="1445" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDownClass -->
-      </class> <!-- parallel.MyTestRunners -->
+      </class> <!-- testrunners.TestExcelDataRunner -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

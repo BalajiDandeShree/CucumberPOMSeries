@@ -55,11 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>Default test</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>5/0/0</td>
+<td>Tests passed/Failed/Skipped:</td><td>0/2/0</td>
 </tr><tr>
-<td>Started on:</td><td>Sat May 11 15:12:09 IST 2024</td>
+<td>Started on:</td><td>Sun May 12 10:41:07 IST 2024</td>
 </tr>
-<tr><td>Total time:</td><td>13 seconds (13083 ms)</td>
+<tr><td>Total time:</td><td>2 seconds (2048 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -67,8 +67,8 @@ function toggleAllBoxes() {
 </tr>
 </table><p/>
 <small><i>(Hover the method name to see the test class name)</i></small><p/>
-<table width='100%' border='1' class='invocation-passed'>
-<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
 <tr><td><b>Test method</b></td>
 <td><b>Attribute(s)</b></td>
 <td width="30%"><b>Exception</b></td>
@@ -76,30 +76,157 @@ function toggleAllBoxes() {
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='parallel.MyTestRunners.runScenario()'><b>runScenario</b><br>Test class: parallel.MyTestRunners<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Dashboard section count", "Optional[Dash Board Freature]"</td>
-<td></td>
-<td>10</td>
-<td>parallel.MyTestRunners@5032714f</td></tr>
+<td title='testrunners.TestExcelDataRunner.runScenario()'><b>runScenario</b><br>Test class: testrunners.TestExcelDataRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "", "Optional[Test Excel data]"</td>
+<td><div><pre>java.lang.IllegalArgumentException: Test name must not be null or empty
+	at com.aventstack.extentreports.util.Assert.notEmpty(Assert.java:12)
+	at com.aventstack.extentreports.ExtentTest.&lt;init&gt;(ExtentTest.java:96)
+	at com.aventstack.extentreports.ExtentTest.createNode(ExtentTest.java:153)
+	at com.aventstack.extentreports.cucumber.adapter.ExtentCucumberAdapter.createScenarioOutline(ExtentCucumberAdapter.java:369)
+	at com.aventstack.extentreports.cucumber.adapter.ExtentCucumberAdapter.handleScenarioOutline(ExtentCucumberAdapter.java:348)
+	at com.aventstack.extentreports.cucumber.adapter.ExtentCucumberAdapter.handleTestCaseStarted(ExtentCucumberAdapter.java:162)
+	at com.aventstack.extentreports.cucumber.adapter.ExtentCucumberAdapter$3.receive(ExtentCucumberAdapter.java:107)
+	at com.aventstack.extentreports.cucumber.adapter.ExtentCucumberAdapter$3.receive(ExtentCucumberAdapter.java:104)
+	at io.cucumber.core.eventbus.AbstractEventPublisher.send(AbstractEventPublisher.java:51)
+	at io.cucumber.core.eventbus.AbstractEventBus.send(AbstractEventBus.java:12)
+	at io.cucumber.core.runtime.SynchronizedEventBus.send(SynchronizedEventBus.java:47)
+	at io.cucumber.core.runtime.ThreadLocalRunnerSupplier$LocalEventBus.send(ThreadLocalRunnerSupplier.java:66)
+	at io.cucumber.core.runner.TestCase.emitTestCaseStarted(TestCase.java:228)
+	at io.cucumber.core.runner.TestCase.run(TestCase.java:92)
+	at io.cucumber.core.runner.Runner.runPickle(Runner.java:71)
+	at io.cucumber.testng.TestNGCucumberRunner.lambda$runScenario$0(TestNGCucumberRunner.java:116)
+	at io.cucumber.core.runtime.CucumberExecutionContext.runTestCase(CucumberExecutionContext.java:117)
+	at io.cucumber.testng.TestNGCucumberRunner.runScenario(TestNGCucumberRunner.java:113)
+	at io.cucumber.testng.AbstractTestNGCucumberTests.runScenario(AbstractTestNGCucumberTests.java:31)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
+	at org.testng.internal.invokers.TestMethodWithDataProviderMethodWorker.call(TestMethodWithDataProviderMethodWorker.java:80)
+	at org.testng.internal.invokers.TestMethodWithDataProviderMethodWorker.call(TestMethodWithDataProviderMethodWorker.java:17)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+</pre></div><a href='#' onClick='toggleBox("stack-trace1695512988", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1695512988'><pre>java.lang.IllegalArgumentException: Test name must not be null or empty
+	at com.aventstack.extentreports.util.Assert.notEmpty(Assert.java:12)
+	at com.aventstack.extentreports.ExtentTest.&lt;init&gt;(ExtentTest.java:96)
+	at com.aventstack.extentreports.ExtentTest.createNode(ExtentTest.java:153)
+	at com.aventstack.extentreports.cucumber.adapter.ExtentCucumberAdapter.createScenarioOutline(ExtentCucumberAdapter.java:369)
+	at com.aventstack.extentreports.cucumber.adapter.ExtentCucumberAdapter.handleScenarioOutline(ExtentCucumberAdapter.java:348)
+	at com.aventstack.extentreports.cucumber.adapter.ExtentCucumberAdapter.handleTestCaseStarted(ExtentCucumberAdapter.java:162)
+	at com.aventstack.extentreports.cucumber.adapter.ExtentCucumberAdapter$3.receive(ExtentCucumberAdapter.java:107)
+	at com.aventstack.extentreports.cucumber.adapter.ExtentCucumberAdapter$3.receive(ExtentCucumberAdapter.java:104)
+	at io.cucumber.core.eventbus.AbstractEventPublisher.send(AbstractEventPublisher.java:51)
+	at io.cucumber.core.eventbus.AbstractEventBus.send(AbstractEventBus.java:12)
+	at io.cucumber.core.runtime.SynchronizedEventBus.send(SynchronizedEventBus.java:47)
+	at io.cucumber.core.runtime.ThreadLocalRunnerSupplier$LocalEventBus.send(ThreadLocalRunnerSupplier.java:66)
+	at io.cucumber.core.runner.TestCase.emitTestCaseStarted(TestCase.java:228)
+	at io.cucumber.core.runner.TestCase.run(TestCase.java:92)
+	at io.cucumber.core.runner.Runner.runPickle(Runner.java:71)
+	at io.cucumber.testng.TestNGCucumberRunner.lambda$runScenario$0(TestNGCucumberRunner.java:116)
+	at io.cucumber.core.runtime.CucumberExecutionContext.runTestCase(CucumberExecutionContext.java:117)
+	at io.cucumber.testng.TestNGCucumberRunner.runScenario(TestNGCucumberRunner.java:113)
+	at io.cucumber.testng.AbstractTestNGCucumberTests.runScenario(AbstractTestNGCucumberTests.java:31)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
+	at org.testng.internal.invokers.TestMethodWithDataProviderMethodWorker.call(TestMethodWithDataProviderMethodWorker.java:80)
+	at org.testng.internal.invokers.TestMethodWithDataProviderMethodWorker.call(TestMethodWithDataProviderMethodWorker.java:17)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+</pre></div></td>
+<td>0</td>
+<td>testrunners.TestExcelDataRunner@5032714f</td></tr>
 <tr>
-<td title='parallel.MyTestRunners.runScenario()'><b>runScenario</b><br>Test class: parallel.MyTestRunners<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Accounts page title", "Optional[Dash Board Freature]"</td>
-<td></td>
-<td>10</td>
-<td>parallel.MyTestRunners@5032714f</td></tr>
-<tr>
-<td title='parallel.MyTestRunners.runScenario()'><b>runScenario</b><br>Test class: parallel.MyTestRunners<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Login with correct credentials", "Optional[Login page feature]"</td>
-<td></td>
-<td>10</td>
-<td>parallel.MyTestRunners@5032714f</td></tr>
-<tr>
-<td title='parallel.MyTestRunners.runScenario()'><b>runScenario</b><br>Test class: parallel.MyTestRunners<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Login page title", "Optional[Login page feature]"</td>
-<td></td>
-<td>9</td>
-<td>parallel.MyTestRunners@5032714f</td></tr>
-<tr>
-<td title='parallel.MyTestRunners.runScenario()'><b>runScenario</b><br>Test class: parallel.MyTestRunners<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Forget password link", "Optional[Login page feature]"</td>
-<td></td>
-<td>9</td>
-<td>parallel.MyTestRunners@5032714f</td></tr>
+<td title='testrunners.TestExcelDataRunner.runScenario()'><b>runScenario</b><br>Test class: testrunners.TestExcelDataRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "", "Optional[Test Excel data]"</td>
+<td><div><pre>java.lang.IllegalArgumentException: Test name must not be null or empty
+	at com.aventstack.extentreports.util.Assert.notEmpty(Assert.java:12)
+	at com.aventstack.extentreports.ExtentTest.&lt;init&gt;(ExtentTest.java:96)
+	at com.aventstack.extentreports.ExtentTest.createNode(ExtentTest.java:153)
+	at com.aventstack.extentreports.cucumber.adapter.ExtentCucumberAdapter.createScenarioOutline(ExtentCucumberAdapter.java:369)
+	at com.aventstack.extentreports.cucumber.adapter.ExtentCucumberAdapter.handleScenarioOutline(ExtentCucumberAdapter.java:348)
+	at com.aventstack.extentreports.cucumber.adapter.ExtentCucumberAdapter.handleTestCaseStarted(ExtentCucumberAdapter.java:162)
+	at com.aventstack.extentreports.cucumber.adapter.ExtentCucumberAdapter$3.receive(ExtentCucumberAdapter.java:107)
+	at com.aventstack.extentreports.cucumber.adapter.ExtentCucumberAdapter$3.receive(ExtentCucumberAdapter.java:104)
+	at io.cucumber.core.eventbus.AbstractEventPublisher.send(AbstractEventPublisher.java:51)
+	at io.cucumber.core.eventbus.AbstractEventBus.send(AbstractEventBus.java:12)
+	at io.cucumber.core.runtime.SynchronizedEventBus.send(SynchronizedEventBus.java:47)
+	at io.cucumber.core.runtime.ThreadLocalRunnerSupplier$LocalEventBus.send(ThreadLocalRunnerSupplier.java:66)
+	at io.cucumber.core.runner.TestCase.emitTestCaseStarted(TestCase.java:228)
+	at io.cucumber.core.runner.TestCase.run(TestCase.java:92)
+	at io.cucumber.core.runner.Runner.runPickle(Runner.java:71)
+	at io.cucumber.testng.TestNGCucumberRunner.lambda$runScenario$0(TestNGCucumberRunner.java:116)
+	at io.cucumber.core.runtime.CucumberExecutionContext.runTestCase(CucumberExecutionContext.java:117)
+	at io.cucumber.testng.TestNGCucumberRunner.runScenario(TestNGCucumberRunner.java:113)
+	at io.cucumber.testng.AbstractTestNGCucumberTests.runScenario(AbstractTestNGCucumberTests.java:31)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
+	at org.testng.internal.invokers.TestMethodWithDataProviderMethodWorker.call(TestMethodWithDataProviderMethodWorker.java:80)
+	at org.testng.internal.invokers.TestMethodWithDataProviderMethodWorker.call(TestMethodWithDataProviderMethodWorker.java:17)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+</pre></div><a href='#' onClick='toggleBox("stack-trace895809466", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace895809466'><pre>java.lang.IllegalArgumentException: Test name must not be null or empty
+	at com.aventstack.extentreports.util.Assert.notEmpty(Assert.java:12)
+	at com.aventstack.extentreports.ExtentTest.&lt;init&gt;(ExtentTest.java:96)
+	at com.aventstack.extentreports.ExtentTest.createNode(ExtentTest.java:153)
+	at com.aventstack.extentreports.cucumber.adapter.ExtentCucumberAdapter.createScenarioOutline(ExtentCucumberAdapter.java:369)
+	at com.aventstack.extentreports.cucumber.adapter.ExtentCucumberAdapter.handleScenarioOutline(ExtentCucumberAdapter.java:348)
+	at com.aventstack.extentreports.cucumber.adapter.ExtentCucumberAdapter.handleTestCaseStarted(ExtentCucumberAdapter.java:162)
+	at com.aventstack.extentreports.cucumber.adapter.ExtentCucumberAdapter$3.receive(ExtentCucumberAdapter.java:107)
+	at com.aventstack.extentreports.cucumber.adapter.ExtentCucumberAdapter$3.receive(ExtentCucumberAdapter.java:104)
+	at io.cucumber.core.eventbus.AbstractEventPublisher.send(AbstractEventPublisher.java:51)
+	at io.cucumber.core.eventbus.AbstractEventBus.send(AbstractEventBus.java:12)
+	at io.cucumber.core.runtime.SynchronizedEventBus.send(SynchronizedEventBus.java:47)
+	at io.cucumber.core.runtime.ThreadLocalRunnerSupplier$LocalEventBus.send(ThreadLocalRunnerSupplier.java:66)
+	at io.cucumber.core.runner.TestCase.emitTestCaseStarted(TestCase.java:228)
+	at io.cucumber.core.runner.TestCase.run(TestCase.java:92)
+	at io.cucumber.core.runner.Runner.runPickle(Runner.java:71)
+	at io.cucumber.testng.TestNGCucumberRunner.lambda$runScenario$0(TestNGCucumberRunner.java:116)
+	at io.cucumber.core.runtime.CucumberExecutionContext.runTestCase(CucumberExecutionContext.java:117)
+	at io.cucumber.testng.TestNGCucumberRunner.runScenario(TestNGCucumberRunner.java:113)
+	at io.cucumber.testng.AbstractTestNGCucumberTests.runScenario(AbstractTestNGCucumberTests.java:31)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
+	at org.testng.internal.invokers.TestMethodWithDataProviderMethodWorker.call(TestMethodWithDataProviderMethodWorker.java:80)
+	at org.testng.internal.invokers.TestMethodWithDataProviderMethodWorker.call(TestMethodWithDataProviderMethodWorker.java:17)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+</pre></div></td>
+<td>0</td>
+<td>testrunners.TestExcelDataRunner@5032714f</td></tr>
 </table><p>
 </body>
 </html>
