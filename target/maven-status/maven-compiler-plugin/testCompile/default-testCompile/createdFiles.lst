@@ -1,0 +1,13 @@
+parallel\TestFailedScenarioStep.class
+parallel\DashBoardPageSteps.class
+com\stepdefinitions\DashBoardPageSteps.class
+com\stepdefinitions\TestFailedScenarioStep.class
+apphooks\ApplicationHooks.class
+com\stepdefinitions\TestExcelDataStep.class
+parallel\FailedRun.class
+com\stepdefinitions\LoginPageSteps.class
+testrunners\TestExcelDataRunner.class
+parallel\LoginPageSteps.class
+parallel\MyTestRunners.class
+testrunners\MyTestRunners1.class
+parallel\ApplicationHooks.class

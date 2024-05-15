@@ -9,7 +9,8 @@ import io.cucumber.testng.CucumberOptions;
 				glue= {"parallel"},
 				plugin = {"pretty",
 						"com.aventstack.extentreports.cucumber.adapter.ExtentCucumberAdapter:",
-						"timeline:test-output-thread/"}
+						"timeline:test-output-thread/",
+						"rerun:target/failedrerun.txt"}
                 )
 public class MyTestRunners extends AbstractTestNGCucumberTests{
 
@@ -21,5 +22,6 @@ public class MyTestRunners extends AbstractTestNGCucumberTests{
 		return super.scenarios();
 		
 	}
+	
 	
 }

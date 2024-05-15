@@ -47,6 +47,7 @@ public class ApplicationHooks {
 			TakesScreenshot tsc =	(TakesScreenshot)driver;
 			byte [] sourcepath = tsc.getScreenshotAs(OutputType.BYTES);
 			scenario.attach(sourcepath, "image/png", screenShotName);
+			
 		}
 	}
 }
