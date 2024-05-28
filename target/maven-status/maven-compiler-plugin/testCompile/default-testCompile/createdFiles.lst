@@ -1,3 +1,4 @@
+testrunners\MyTestRunners1.class
 parallel\TestFailedScenarioStep.class
 parallel\DashBoardPageSteps.class
 com\stepdefinitions\DashBoardPageSteps.class
@@ -9,5 +10,4 @@ com\stepdefinitions\LoginPageSteps.class
 testrunners\TestExcelDataRunner.class
 parallel\LoginPageSteps.class
 parallel\MyTestRunners.class
-testrunners\MyTestRunners1.class
 parallel\ApplicationHooks.class
