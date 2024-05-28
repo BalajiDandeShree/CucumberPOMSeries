@@ -1,96 +1,96 @@
 $(document).ready(function() {
 CucumberHTML.timelineItems.pushArray([
   {
-    "id": "4a75b627-4bdd-4289-8509-da9e1327ae93",
-    "feature": "Login page feature",
-    "scenario": "Forget password link",
-    "start": 1715777210735,
-    "group": 36,
-    "content": "",
-    "tags": "",
-    "end": 1715777218564,
-    "className": "passed"
-  },
-  {
-    "id": "d8964d4c-f69a-429e-ada2-29547500f0c5",
-    "feature": "Login page feature",
-    "scenario": "Login page title",
-    "start": 1715777210806,
-    "group": 35,
-    "content": "",
-    "tags": "",
-    "end": 1715777220728,
-    "className": "passed"
-  },
-  {
-    "id": "256ba347-b50f-47f1-ae60-0106f38a9dfb",
-    "feature": "Dash Board Freature",
-    "scenario": "Dashboard section count",
-    "start": 1715777210807,
-    "group": 34,
-    "content": "",
-    "tags": "",
-    "end": 1715777222408,
-    "className": "passed"
-  },
-  {
-    "id": "a6b0a492-6ca8-4a31-b79d-357eeb87c511",
-    "feature": "Dash Board Freature",
-    "scenario": "Accounts page title",
-    "start": 1715777210807,
-    "group": 33,
-    "content": "",
-    "tags": "",
-    "end": 1715777222749,
-    "className": "passed"
-  },
-  {
-    "id": "967bc91a-2329-4d26-bd70-2aa4fe89c616",
+    "id": "ff5b606b-7e2e-42f8-882f-3e7df3664c4b",
     "feature": "Login page feature",
     "scenario": "Login with correct credentials",
-    "start": 1715777210806,
-    "group": 37,
+    "start": 1716854794736,
+    "group": 24,
     "content": "",
     "tags": "",
-    "end": 1715777224374,
+    "end": 1716854803655,
     "className": "passed"
   },
   {
-    "id": "c34941e6-c7c3-4462-b382-99dc1a37f124",
-    "feature": "To check failed scenario",
-    "scenario": "Failed sceanrio",
-    "start": 1715777210734,
-    "group": 38,
+    "id": "c6e14589-bdd5-48b0-81ad-a9585da4aeab",
+    "feature": "Dash Board Freature",
+    "scenario": "Accounts page title",
+    "start": 1716854794736,
+    "group": 20,
     "content": "",
     "tags": "",
-    "end": 1715777215830,
+    "end": 1716854803730,
+    "className": "passed"
+  },
+  {
+    "id": "682d888e-1317-4e36-bd2d-44bb1238df68",
+    "feature": "Login page feature",
+    "scenario": "Forget password link",
+    "start": 1716854794673,
+    "group": 23,
+    "content": "",
+    "tags": "",
+    "end": 1716854800342,
+    "className": "passed"
+  },
+  {
+    "id": "4c42c8dd-b482-422e-ac00-4d8657bfaef1",
+    "feature": "Login page feature",
+    "scenario": "Login page title",
+    "start": 1716854794737,
+    "group": 22,
+    "content": "",
+    "tags": "",
+    "end": 1716854801665,
+    "className": "passed"
+  },
+  {
+    "id": "360667c9-8279-4ca5-b8ef-e7b03ea3ea5f",
+    "feature": "To check failed scenario",
+    "scenario": "Failed sceanrio",
+    "start": 1716854794674,
+    "group": 25,
+    "content": "",
+    "tags": "",
+    "end": 1716854799005,
+    "className": "passed"
+  },
+  {
+    "id": "b4a6c7e9-2343-46c2-8548-62dc5da7f625",
+    "feature": "Dash Board Freature",
+    "scenario": "Dashboard section count",
+    "start": 1716854794737,
+    "group": 21,
+    "content": "",
+    "tags": "",
+    "end": 1716854803683,
     "className": "passed"
   }
 ]);
 CucumberHTML.timelineGroups.pushArray([
   {
-    "id": 33,
-    "content": "Thread[#33,TestNG-PoolService-0,5,main]"
+    "id": 20,
+    "content": "Thread[TestNG-PoolService-0,5,main]"
   },
   {
-    "id": 34,
-    "content": "Thread[#34,TestNG-PoolService-1,5,main]"
+    "id": 21,
+    "content": "Thread[TestNG-PoolService-1,5,main]"
   },
   {
-    "id": 35,
-    "content": "Thread[#35,TestNG-PoolService-2,5,main]"
+    "id": 22,
+    "content": "Thread[TestNG-PoolService-2,5,main]"
   },
   {
-    "id": 36,
-    "content": "Thread[#36,TestNG-PoolService-3,5,main]"
+    "id": 23,
+    "content": "Thread[TestNG-PoolService-3,5,main]"
   },
   {
-    "id": 37,
-    "content": "Thread[#37,TestNG-PoolService-4,5,main]"
+    "id": 24,
+    "content": "Thread[TestNG-PoolService-4,5,main]"
   },
   {
-    "id": 38,
-    "content": "Thread[#38,TestNG-PoolService-5,5,main]"
+    "id": 25,
+    "content": "Thread[TestNG-PoolService-5,5,main]"
   }
 ]);
 });
