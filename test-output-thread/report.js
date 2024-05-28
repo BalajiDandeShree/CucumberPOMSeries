@@ -1,69 +1,69 @@
 $(document).ready(function() {
 CucumberHTML.timelineItems.pushArray([
   {
-    "id": "ff5b606b-7e2e-42f8-882f-3e7df3664c4b",
-    "feature": "Login page feature",
-    "scenario": "Login with correct credentials",
-    "start": 1716854794736,
-    "group": 24,
-    "content": "",
-    "tags": "",
-    "end": 1716854803655,
-    "className": "passed"
-  },
-  {
-    "id": "c6e14589-bdd5-48b0-81ad-a9585da4aeab",
+    "id": "114ae3af-cb6e-499a-8798-9314d867bde8",
     "feature": "Dash Board Freature",
     "scenario": "Accounts page title",
-    "start": 1716854794736,
+    "start": 1716913667150,
     "group": 20,
     "content": "",
     "tags": "",
-    "end": 1716854803730,
+    "end": 1716913675349,
     "className": "passed"
   },
   {
-    "id": "682d888e-1317-4e36-bd2d-44bb1238df68",
-    "feature": "Login page feature",
-    "scenario": "Forget password link",
-    "start": 1716854794673,
-    "group": 23,
-    "content": "",
-    "tags": "",
-    "end": 1716854800342,
-    "className": "passed"
-  },
-  {
-    "id": "4c42c8dd-b482-422e-ac00-4d8657bfaef1",
+    "id": "0eb9dcab-c686-4d31-a48b-db1109fbc597",
     "feature": "Login page feature",
     "scenario": "Login page title",
-    "start": 1716854794737,
+    "start": 1716913667149,
     "group": 22,
     "content": "",
     "tags": "",
-    "end": 1716854801665,
+    "end": 1716913672548,
     "className": "passed"
   },
   {
-    "id": "360667c9-8279-4ca5-b8ef-e7b03ea3ea5f",
-    "feature": "To check failed scenario",
-    "scenario": "Failed sceanrio",
-    "start": 1716854794674,
-    "group": 25,
+    "id": "05711a86-b4c9-4cde-9c18-ac5d52c0714f",
+    "feature": "Login page feature",
+    "scenario": "Login with correct credentials",
+    "start": 1716913667148,
+    "group": 24,
     "content": "",
     "tags": "",
-    "end": 1716854799005,
+    "end": 1716913675257,
     "className": "passed"
   },
   {
-    "id": "b4a6c7e9-2343-46c2-8548-62dc5da7f625",
+    "id": "6f409ba6-90c1-4f39-a877-00d0063bff93",
     "feature": "Dash Board Freature",
     "scenario": "Dashboard section count",
-    "start": 1716854794737,
+    "start": 1716913667150,
     "group": 21,
     "content": "",
     "tags": "",
-    "end": 1716854803683,
+    "end": 1716913674719,
+    "className": "passed"
+  },
+  {
+    "id": "db5c85b6-94cf-44fb-8360-21e1b16aee3f",
+    "feature": "Login page feature",
+    "scenario": "Forget password link",
+    "start": 1716913667088,
+    "group": 23,
+    "content": "",
+    "tags": "",
+    "end": 1716913672761,
+    "className": "passed"
+  },
+  {
+    "id": "4a5247ba-8ef2-4ab9-8910-560bc0c0013e",
+    "feature": "To check failed scenario",
+    "scenario": "Failed sceanrio",
+    "start": 1716913667089,
+    "group": 25,
+    "content": "",
+    "tags": "",
+    "end": 1716913671213,
     "className": "passed"
   }
 ]);
